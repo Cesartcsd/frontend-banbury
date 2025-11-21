@@ -1,0 +1,13 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g2Grad" x1="6" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2f6bb8"/>
+      <stop offset="1" stop-color="#0f2144"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="10" fill="url(#g2Grad)" filter="url(#shadow)"/>
+  <text x="12" y="44" fill="#F6F7FB" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="34" font-weight="800">G2</text>
+</svg>

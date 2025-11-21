@@ -1,0 +1,12 @@
+{
+  "Name": "CORS-G2",
+  "Comment": "CORS for G2 IA",
+  "CorsConfig": {
+    "AccessControlAllowOrigins": { "Items": ["https://d252gszatm6gub.cloudfront.net"], "Quantity": 1 },
+    "AccessControlAllowHeaders": { "Items": ["content-type","x-api-key"], "Quantity": 2 },
+    "AccessControlAllowMethods": { "Items": ["GET","POST","OPTIONS"], "Quantity": 3 },
+    "AccessControlAllowCredentials": false,
+    "AccessControlExposeHeaders": { "Items": [], "Quantity": 0 },
+    "OriginOverride": true
+  }
+}

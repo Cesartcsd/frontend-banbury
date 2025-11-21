@@ -1,0 +1,212 @@
+:root {
+  --bg-1: #0d1427;
+  --bg-2: #0a0f1e;
+  --panel: #111a2e;
+  --panel-border: rgba(255, 255, 255, 0.05);
+  --panel-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --muted: #9db3d8;
+  --text: #e5edff;
+  --accent: #3f73ff;
+  --accent-strong: #2f63f0;
+  --danger: #f25f6b;
+  --input-bg: #0c172b;
+  --input-border: rgba(255, 255, 255, 0.08);
+  --table-header: rgba(255, 255, 255, 0.05);
+  --radius: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", "Inter", system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at 20% 20%, rgba(63, 115, 255, 0.08), transparent 30%),
+    radial-gradient(circle at 80% 10%, rgba(242, 95, 107, 0.06), transparent 28%),
+    linear-gradient(145deg, var(--bg-1), var(--bg-2));
+  color: var(--text);
+}
+
+#root {
+  min-height: 100vh;
+  padding: 32px 28px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+h1 {
+  font-size: 24px;
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #d8e5ff;
+}
+
+h3 {
+  font-size: 16px;
+  color: #c8d6f5;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+.brand-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #eef3ff;
+}
+
+form {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  box-shadow: var(--panel-shadow);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.field-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--panel-border);
+}
+
+.field-group label {
+  grid-column: 1 / -1;
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.2px;
+}
+
+input {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+  border-color: rgba(63, 115, 255, 0.8);
+  box-shadow: 0 0 0 3px rgba(63, 115, 255, 0.15);
+}
+
+button {
+  align-self: flex-start;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: #f3f6ff;
+  border: 1px solid rgba(63, 115, 255, 0.1);
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.2s ease;
+  box-shadow: 0 8px 20px rgba(63, 115, 255, 0.25);
+}
+
+button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(63, 115, 255, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--panel-shadow);
+}
+
+thead tr {
+  background: var(--table-header);
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--panel-border);
+  padding: 12px 10px;
+  text-align: left;
+  color: #dbe6ff;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.resultado {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.resultado > div {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--panel-shadow);
+}
+
+.resultado table {
+  margin-top: 8px;
+}
+
+p {
+  color: var(--muted);
+  margin: 0;
+}

@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://hedeueuvhi.us-east-1.awsapprunner.com',
+        target: 'https://brpvgpgihs.us-east-1.awsapprunner.com',
         changeOrigin: true,
         secure: true,
         rewrite: (path) => path.replace(/^\/api/, ''),

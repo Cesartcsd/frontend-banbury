@@ -1,7 +1,11 @@
 export const API_KEY = "bmbry-7b7a0f5e-4828-4455-bcb9-d8932ce0f4f8";
 
-// Default to "/api" so local dev uses the Vite proxy and prod uses the CF path.
-const API_BASE = import.meta.env.VITE_API_BASE || "/api";
+const PRODUCTION_API_BASE = "https://brpvgpgihs.us-east-1.awsapprunner.com";
+
+// In production, keep the API target versioned with the frontend bundle.
+const API_BASE = import.meta.env.PROD
+  ? PRODUCTION_API_BASE
+  : import.meta.env.VITE_API_BASE || "/api";
 
 export async function solveRequest(body) {
   const response = await fetch(`${API_BASE}/solve`, {

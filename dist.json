@@ -26,8 +26,8 @@
                                       "OriginAccessControlId":  "E1Y454BXOMRN4Q"
                                   },
                                   {
-                                      "Id":  "hedeueuvhi.us-east-1.awsapprunner.com",
-                                      "DomainName":  "hedeueuvhi.us-east-1.awsapprunner.com",
+                                      "Id":  "brpvgpgihs.us-east-1.awsapprunner.com",
+                                      "DomainName":  "brpvgpgihs.us-east-1.awsapprunner.com",
                                       "OriginPath":  "",
                                       "CustomHeaders":  {
                                                             "Quantity":  0
@@ -116,7 +116,7 @@
                                                                             },
                                              "ResponseHeadersPolicyId":  "4d060235-b3a8-42c1-bc55-98e99e833519",
                                              "ViewerProtocolPolicy":  "redirect-to-https",
-                                             "TargetOriginId":  "hedeueuvhi.us-east-1.awsapprunner.com",
+                                             "TargetOriginId":  "brpvgpgihs.us-east-1.awsapprunner.com",
                                              "AllowedMethods":  {
                                                                     "Quantity":  7,
                                                                     "Items":  [
